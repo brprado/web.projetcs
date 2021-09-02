@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+    <title>Cadastro HTML e CSS</title>
+  </head>
+  <body>
+    <div>
+      <h1 id="titulo">Cadastro de DEVs <img src="form.png" width="80" height="80"></h1>
+      <br>
+      <p id="subtitulo">Complete suas informações</p>
+      <br />
+    </div>
+
+    <form><strong></strong>
+      <fieldset class="grupo">
+        <div class="campo">
+          <label for="nome"><strong>Nome</strong></label>
+          <input type="text" name="nome" id="nome" required /> <!--required = campo obrigatório-->
+        </div>
+        
+        <div class="campo">
+          <label for="Sobrenome"><strong>Sobrenome</strong></label>
+          <input type="text" name="Sobrenome" id="Sobrenome" required />
+        </div>
+      </fieldset class="grupo">
+      
+      <div class="campo">
+        <label for="E-mail"><strong>E-mail</strong></label>
+        <input type="email" name="E-mail" id="E-mail" required />
+      </div>
+      
+      <div class="campo">
+        <label>De qual lado da aplicação você desenvolve?</label>
+        <!-- botão de bolinha redonda -->
+        <label>
+          <input type="radio" name="devweb" value="frontend" checked />Front-end
+        </label>
+        <label>
+          <input type="radio" name="devweb" value="backend" />Back-end
+          <!-- os nomes devem ser iguais para que o usuário só escolha 1 opção -->
+        </label>
+        <label
+          ><input type="radio" name="devweb" id="fullstack" />Full-Stack</label
+        >
+      </div>
+      <div class="campo">
+        <br />
+        <label>Senioridade</label>
+        <select name="senioridade" id="senioridade">
+          <!-- criando selecionador de opções. ex: genero -->
+          <option selected disabled>Selecione</option>
+          <option>Junior</option>
+          <option>Pleno</option>
+          <option>Senior</option>
+        </select>
+      </div>
+      <br />
+      <fieldset>
+        <div>
+          <label>Selecione as tecnologias que você utiliza:</label> <br /><br /> <!--checkbox-->
+          <input
+            type="checkbox"   
+            id="tecnologia1"
+            name="tecnologia1"
+            value="html"
+          />
+          HTML
+          <br />
+          <input
+            type="checkbox"
+            id="tecnologia2"
+            name="tecnologia2"
+            value="css"
+          />
+          CSS
+          <br />
+          <input
+            type="checkbox"
+            id="tecnologia3"
+            name="tecnologia3"
+            value="JavaScript"
+          />
+          JavaScript
+          <br />
+          <input
+            type="checkbox"
+            id="tecnologia4"
+            name="tecnologia4"
+            value="php"
+          />
+          PHP
+          <br />
+          <input
+            type="checkbox"
+            id="tecnologia5"
+            name="tecnologia5"
+            value="csharp"
+          />
+          C#
+          <br />
+          <input
+            type="checkbox"
+            id="tecnologia6"
+            name="tecnologia6"
+            value="c++"
+          /> C++
+          <br />
+          <input
+            type="checkbox"
+            id="tecnologia7"
+            name="tecnologia7"
+            value="c"
+          /> C
+          <br />
+          <input
+            type="checkbox"
+            id="tecnologia8"
+            name="tecnologia8"
+            value="Java"
+          />
+          Java
+          <br />
+          <label>Outras</label>
+            <input
+            type="text"
+            id="tecnologia8"
+            name="tecnologia8"            
+          />
+          
+        </fieldset>  
+        </div>
+        <br>
+        <div>
+          <label>Conte-nos um pouco mais da sua experiência e trajetória!</label><br>
+          <textarea  id="experiência" name="experiência" cols="30" rows="10" style="width: 26em"></textarea>
+        </div>
+        <br>
+      <button type="submit" class="botao">Enviar</button>
+    </form>
+  </body>
+</html>
